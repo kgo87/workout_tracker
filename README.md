@@ -15,9 +15,7 @@ This is a full-stack application to view, create and track daily workouts. Devel
 ## 2. Task<a name="task"></a>
 Task is to build a workout tracker that allows user to view, create and track daily workouts.
 
-
-The app contains three main routes: GET - ________ , POST -____, PUT - ... 
-
+The app contains three main routes: GET - to allow the user to view their workouts , POST - to allow the user to create a new workout, PUT - to allow the user to add new excersices to the existing workout. There is also an additional GET route that allows the user to view the stats of their workouts. 
 
 
 ## 3. Link to Heroku deployment <a name="link"></a>
@@ -25,19 +23,13 @@ The project is deployed on Heroku and available for view using this link:
 https://workout-tracker-kat.herokuapp.com/
 
 ## 4. Structure<a name="structure"></a>
-The structure of the repo is presented in the image below:
-![Screenshot](./public/assets/media/dir_structure.png).
+The repo contains a set of files and folders responsible for backend functionality. Files responsible for fronteend functionoality are located in a public folder.
 Config folder contains *connection.js* and *orm.js*. 
-*Connection.js* has the code needed to establish connection to a database.
-![Screenshot](./public/assets/media/connection.png).
-*orm.js* defines CRUD methods.
-![Screenshot](./public/assets/media/orm.png).
-Controllers folder contains *burger-controller.js* which establishes server routes:
-![Screenshot](./public/assets/media/controllers.png).
-Models folder contains *burger.js* which connects the developed CRUD methods with the server routes:
+
+Models folder contains *workout.js* which initializes the documents saved to the database:
 ![Screenshot](./public/assets/media/models_burger.png).
-Views and public folder contains the frontend part of the application such as handlebars, stylesheet and front-end javascript.
-![Screenshot](./public/assets/media/frontend.png).
+Routes folder contains *html.js* which sets the routes to display .html files, and *api.js* which is responsible for displaying and posting the data to the database. 
+![Screenshot](./public/assets/media/models_burger.png).
 *Server.js* that is located in the root folder stores all the dependensies and connects to the port.
 ![Screenshot](./public/assets/media/server.png).
 
