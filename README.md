@@ -24,7 +24,7 @@ https://workout-tracker-kat.herokuapp.com/
 ## 4. Structure<a name="structure"></a>
 The repo contains a set of files and folders responsible for backend functionality. Files responsible for frontend functionality are located in a public folder.
 
-Models folder contains *workout.js* which initializes the documents saved to the database:
+Models folder contains *workout.js* which initializes the schema. Schema represents the document properties that are saved to the database, and computed properties (through virtuals) that are just displayed on a web-page.
 ![Screenshot](./public/assets/media/model.png).
 Routes folder contains *html.js* which sets the routes to display .html files:
 ![Screenshot](./public/assets/media/htmlroutes.png)
